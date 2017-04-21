@@ -93,7 +93,7 @@ body {
 	width: 18px;
 	height: 18px;
 	background:  url("../img/sprite.png") no-repeat;
-	background-position: -2px -82px;
+	background-position: -20px -154px;
 	opacity: 0.3;
 }
 
@@ -205,14 +205,20 @@ body {
 
 .news-preview time {
 	text-transform: none;
+	font-weught: 400;
 }
 
 .btn {
+	display: inline-block;
+	margin-right: 1px;
+	padding: 10px 33px;
 	font-weight: 700;
 	font-size: 14px;
 	line-height: 24px;
 	font-family: "PT Sans Narrow", "Arial", sans-serif;
-	color: #fff;
+	vertical-align: top;
+	text-align: center;
+	color: #ffffff;
 	text-transform: uppercase;
 	text-decoration: none;
 	background-color: #000;
@@ -221,10 +227,88 @@ body {
 	cursor: pointer;
 }
 
+.btn:hover,
+.btn:active {
+	background-color: #663d15;
+}
+
+.btn.disabled,
+.btn:disabled {
+	sursor: default;
+	opacity: 0.5;
+}
+.btn.disabled:hover,
+.btn:disabled:hover {
+	background-color: #000000;
+}
+
+.gallery {
+	position: relative;
+	height: 260px;
+}
+
+.gallery-content {
+	height: 164px;
+	margin: 0;
+	background-color: #cccccc;
+	border: 7px solid #ffffff;
+}
+
+.gallery-content img {
+	width: 286px;
+	height: 164px;
+}
+
+.gallery .btn {
+	position: absolute;
+	bottom: 0;
+	width: 140px;
+	margin: 0;
+}
+
+.gallery-prev {
+	left: 0;
+}
+
+.gallery-next {
+	right: 0;
+}
+
+.appointment-form input {
+	float: left;
+	width: 106px;
+	margin-right: 20px;
+	margin-bottom: 20px;
+	padding: 7px 15px;
+	font-size: 14px;
+	line-height: 24px;
+	font-family: "PT Sans Narrow", "Arial", sans-serif;
+	color: #000000;
+	text-transform: uppercase;
+	background-color: #f9f6f3;
+	border: 2px solid #000000;
+	outline: none;
+}
+
+..appointment-form input:focus {
+	border: 2px solid #663d15;
+}
+
+.appointment-form input:nth-child(2n) {
+	margin-right: 0;
+}
+
+.appointment-form .btn {
+	clear: both;
+	width: 100%;
+}
+
 .main-footer {
 	margin-top: 65px;
 	padding-top: 60px;
 	padding-bottom: 40px;
+	color: #ffffff;
+	background: #252525 url("../img/pattern-black.jpg")
 }
 
 .footer-contacts {
@@ -232,12 +316,86 @@ body {
 	margin-right: 60px;
 	width: 320px;
 }
+
+.footer-contacts a {
+	color: #ffffff;
+}
+
+.footer-contacts a:hover {
+	text-decoration: none;
+}
+
 .footer-social {
 	float: left;
 	width: 180px;
+
+	text-align: center;
 }
 
 .footer-copyright {
 	float: right;
-	width: 180px;
+	max-width: 180px;
+
+}
+
+.footer-social p {
+	margin: 0;
+	margin-bottom: 15px;
+}
+
+.social-btn {
+	display: inline-block;
+	width: 43px;
+	height: 43px;
+	margin: 0 2px;
+	font-size: 0;
+	vertical-align: top;
+	text-decoration: none;
+	background: #000000 url("../img/sprite.png") no-repeat center;
+	transition: 
+		background-position 0.5s,
+		background-color 0.5s;
+}
+
+.social-btn:hover {
+	background-color: #ffffff;
+}
+
+.social-btn-vk {
+	background-position: -11px -23px;
+}
+
+.social-btn-fb {
+	background-position: -5px -323px;
+}
+
+.social-btn-inst {
+	background-position: -9px -61px;
+}
+
+.social-btn-vk:hover {
+	background-position: -11px 13px;;
+}
+
+.social-btn-fb:hover {
+	background-position: -5px -366px;
+}
+
+.social-btn-inst:hover {
+	background-position: -9px -102px;
+}
+
+.footer-copyright p {
+	margin: 0;
+	margin-bottom: 15px;
+	text-align: center;
+}
+
+.footere-copyright .btn {
+	margin-right: 0;
+}
+
+.footer-copyright .btn:hover {
+	color: #000000;
+	background-color: #ffffff;
 }
