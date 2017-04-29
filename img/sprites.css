@@ -1,0 +1,58 @@
+.Locked, .User, .enter, .v2, .vk, .inst2, .inst, .f2, .f{
+	background: url(sprites.png) no-repeat;
+}
+
+.Locked{
+	background-position: -13px 0;
+	width: 15px;
+	height: 17px;
+}
+
+.User{
+	background-position: -13px -49px ;
+	width: 15px;
+	height: 15px;
+}
+
+.enter{
+	background-position: 0 -100px ;
+	width: 18px;
+	height: 16px;
+}
+
+.v2{
+	background-position: 0 -150px ;
+	width: 25px;
+	height: 16px;
+}
+
+.vk{
+	background-position: 0 -199px ;
+	width: 25px;
+	height: 16px;
+}
+
+.inst2{
+	background-position: 0 -249px ;
+	width: 21px;
+	height: 21px;
+}
+
+.inst{
+	background-position: 0 -300px ;
+	width: 21px;
+	height: 21px;
+}
+
+.f2{
+	background-position: 0 -350px ;
+	width: 12px;
+	height: 22px;
+}
+
+.f{
+	background-position: 0 -399px ;
+	width: 12px;
+	height: 22px;
+}
+
