@@ -5,7 +5,7 @@ body {
 	font-size: 14px;
 	line-height: 24px;
 	font-family: "PT Sans Narrow", "Arial", sans-serif;
-	color: #fff;
+	color: #ffffff;
 	text-transform: uppercase;
 	background: #000 url("../img/body-bg.jpg") no-repeat center top;
   margin: 0;
@@ -532,9 +532,81 @@ body {
 	width: 460px;
 }
 
-.item-gallery img {
+.item-galery img {
 	float: left;
+	box-shadow: 0 0 25px 5px rgba(0, 0, 0, 0.2);
 }
+
+.item-big-img {
+	margin-bottom: 21px;
+}
+
+.item-galery img:nth-child(2),
+.item-galery img:nth-child(3) {
+	margin-right: 20px;
+}
+
+.item-info {
+	float: right;
+	width: 390px;
+	padding-top: 24px;
+	font-size: 14px;
+	line-height: 24px;
+	font-family: "PT Sans Narrow", "Arial", sans-serif;
+	color: #000000;
+	text-transform: uppercase;
+}
+
+.item-article {
+	float: right;
+	margin-right: 10px;
+	color: #aba9a7;
+}
+
+.discription {
+	margin-top: 30px;
+	margin-bottom: 36px;
+}
+
+.item-price {
+	width: 187px;
+	background-color: #e5e5e5;
+}
+.price-text {
+	display: inline-block;
+	margin-left: 27px;
+	margin-right: 25px;
+	padding-top: 11px;
+}
+
+.price-btn {
+	display: inline-block;
+	padding-top: 11px;
+	padding-left: 17px;
+	padding-right: 17px;
+	font-weight: 700;
+	font-size: 14px;
+	line-height: 24px;
+	font-family: "PT Sans Narrow", "Arial", sans-serif;
+	vertical-align: top;
+	text-align: center;
+	color: #ffffff;
+	text-transform: uppercase;
+	text-decoration: none;
+	background-color: #000;
+	border: none;
+	outline: none;
+	cursor: pointer;
+}
+ 
+.item-info h2 {
+	margin-top: 62px;
+	margin-bottom: 30px;
+	font-size: 24px;
+	line-height: 30px; 
+}
+
+
 
 /* ----------------------------------------- FOOTER  ----------------------------------------- */
 
