@@ -606,9 +606,77 @@ body {
 	line-height: 30px; 
 }
 
+/* ----------------------------------------- Shop.html  ----------------------------------------- */
 
+.form-category {
+	float: left;
+	width: 220px;
 
-/* ----------------------------------------- FOOTER  ----------------------------------------- */
+}
+
+fieldset {
+	border: none;
+}
+
+.items {
+	float: right;
+	width: 700px;
+	font-size: 0;
+	vertical-align: top;
+}
+
+.items .item {
+	display: inline-block;
+	width: 220px;
+	margin-right: 20px;
+	margin-bottom: 20px;	
+	background-color: #ffffff;
+	font-weight: 700;
+	font-size: 14px;
+	line-height: 18px;
+	font-family: "PT Sans Narrow", "Arial", sans-serif;
+	color: #000000;
+	text-transform: uppercase;
+	box-shadow: 0 0 25px 2px rgba(0, 0, 0, 0.2);
+}
+
+.items .item:nth-child(3n) {
+	margin-right: 0 ;
+}
+
+.item-bottom {
+	padding-left: 16px;
+	padding-top: 10px;
+}
+
+.item-bottom a {
+	text-decoration: none;
+}
+
+.item-bottom .category ,
+.item-bottom .title {
+	color: #000000;
+}
+
+.item-bottom .category {
+	text-transform: none;
+}
+
+.item-bottom .item-price {
+	margin: 15px 0;
+}
+
+.paginator {
+	float: left;
+	font-weight: 700;
+	font-size: 14px;
+	line-height: 18px;
+	font-family: "PT Sans Narrow", "Arial", sans-serif;
+	color: #000000;
+	text-transform: uppercase;
+}
+
+/* ----------------------------------------- Footer  ----------------------------------------- */
 
 .main-footer {
 	margin-top: 65px;
