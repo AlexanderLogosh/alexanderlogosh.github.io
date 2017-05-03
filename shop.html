@@ -40,38 +40,56 @@
 			<form action="https://echo.htmlacademy.ru" method="get">
 				<fieldset>
 					<legend>Производители:</legend>
-					<label>
-						<input type="checkbox" name="Baxter of California" checked>Baxter of California
+					<label class="category-checkbox">
+						<input type="checkbox" name="Baxter of California" checked>
+						<span class="checkbox-indicator"></span>
+						Baxter of California
 					</label>
-					<label>
-						<input type="checkbox" name="Mr Natty">Mr Natty
+					<label class="category-checkbox">
+						<input type="checkbox" name="Mr Natty">
+						<span class="checkbox-indicator"></span>
+						Mr Natty
 					</label>
-					<label>
-						<input type="checkbox" name="Suavecito" checked>Suavecito
+					<label class="category-checkbox">
+						<input type="checkbox" name="Suavecito" checked>
+						<span class="checkbox-indicator"></span>
+						Suavecito
 					</label>
-					<label>
-						<input type="checkbox" name="Malin+Goetz">Malin+Goetz
+					<label class="category-checkbox">
+						<input type="checkbox" name="Malin+Goetz">
+						<span class="checkbox-indicator"></span>
+						Malin+Goetz
 					</label>
-					<label>
-						<input type="checkbox" name="Murray’s">Murray’s
+					<label class="category-checkbox disabledet">
+						<input type="checkbox" name="Murray’s">
+						<span class="checkbox-indicator"></span>
+						Murray’s
 					</label>
-					<label>
-						<input type="checkbox" name="American Crew" checked>American Crew
+					<label class="category-checkbox">
+						<input type="checkbox" name="American Crew" checked>
+						<span class="checkbox-indicator"></span>
+						American Crew
 					</label>
 				</fieldset>
 				<fieldset>
 					<legend>Группы товаров:</legend>
-					<label>
-						<input type="radio" name="radio" value="Бритвенные принадлежности">Бритвенные принадлежности
+					<label class="category-radio">
+						<input type="radio" name="radio" value="Бритвенные принадлежности">
+						<span class="radio-indicator"></span>
+						Бритвенные принадлежности
 					</label>
-					<label>
-						<input type="radio" name="radio" value="Средства для ухода" checked>Средства для ухода
+					<label class="category-radio">
+						<input type="radio" name="radio" value="Средства для ухода" checked>
+						<span class="radio-indicator"></span>
+						Средства для ухода
 					</label>
-					<label>
-						<input type="radio" name="radio" value="Аксессуары">Аксессуары
+					<label class="category-radio">
+						<input type="radio" name="radio" value="Аксессуары">
+						<span class="radio-indicator"></span>
+						Аксессуары
 					</label>
 				</fieldset>
-				<button type="submit">Показать</button>
+				<button type="submit" class="btn">Показать</button>
 			</form>
 		</div>
 
@@ -155,10 +173,10 @@
 				</div>
 			</article>
 			<div class="paginator">
-			<a href="#">1</a>
-			<a href="#">2</a>
-			<span>3</span>
-			<a href="#">4</a>
+			<a href="#" class="page-number">1</a>
+			<a href="#" class="page-number">2</a>
+			<span  class="page-number page-number-active">3</span>
+			<a href="#"  class="page-number">4</a>
 		</div>
 		</section>
 
