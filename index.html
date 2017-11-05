@@ -8,159 +8,164 @@
 	<link href="css/style.css" rel="stylesheet" type="text/css">
 </head>
 <body>
-	<header class="main-header">
-		<div class="container clearfix">
-			<nav class="main-navigation">
-				<ul>
-					<li><a href="#">Информация</a></li>
-					<li><a href="#">Новости</a></li>
-					<li><a href="price.html">Прайс-лист</a></li>
-					<li><a href="shop.html">Магазин</a></li>
-					<li><a href="#">Контакты</a></li>
-				</ul>
-			</nav>
-			<div class="user-block">
-				<a class="login" href="#" >Вход</a>
-			</div>
+	<header class="page-header">
+		<h1 class="visually-hidden">Барбершоп «Бородинский» — истинно мужская классика</h1>
+		<div class="page-header__logo">
+			<img src="img/logo.svg" width="370" height="153" alt="Барбершоп «Бородинский»">
 		</div>
+		<nav class="main-nav main-nav--closed main-nav--nojs">
+			<button class="main-nav__toggle" type="button">Открыть меню</button>
+			<div class="main-nav__wrapper">
+				<ul class="main-nav__items">
+					<li class="main-nav__item main-nav__item--active"><a>Главная</a></li>
+					<li class="main-nav__item"><a href="">Наши работы</a></li>
+					<li class="main-nav__item"><a href="">Записаться</a></li>
+					<li class="main-nav__item"><a href="">Контакты</a></li>
+					<li class="main-nav__item"><a href="">HTML Academy</a></li>
+				</ul>
+				<ul class="main-nav__user-items">
+					<li class="main-nav__user-item"><a class="main-nav__user-login" href="" title="Войти">Вход</a></li>
+				</ul>
+			</div>
+		</nav>
 	</header>
-
-
-
-	<main class="container">
-		<div class="index-logo">
-			<img src="img/index-logo.png" width="368" height="204" alt="Барбершоп «Бородинский»">
-		</div>
-		<section class="features clearfix">
-			<div class="features-item">
-				<b class="features-name">Быстро</b>
-				<p>Мы делаем свою работу быстро! Два часа пролетят незаметно и вы - счастливый обладатель стильной стрижки-минутки!</p>
-			</div>
-			<div class="features-item">
-				<b class="features-name">КРУТО</b>
-				<p>Забудьте, как вы стриглись раньше.<br>Мы сделаем из вас звезду футбола или кино! Во всяком случае внешне.</p>
-			</div>
-			<div class="features-item">
-				<b class="features-name">ДОРОГО</b>
-				<p>Наши мастера - профессионалы своего дела и не могут стоить дешево. К тому же, разве цена не дает определеный статус?</p>
-			</div>
+	<main>
+		<section class="stats">
+			<header class="stats__header">
+				<h2 class="stats__title visually-hidden">Статистика Барбершопа</h2>
+				<b class="stats__slogan">Стрижка у нас<br> это выгодно!</b>
+				<p class="stats__intro">Мужская стрижка требует точного подхода. Обратимся к статистике:</p>
+				<small class="stats__legend stats__legend--top"><sup>*</sup> — приведённые данные ложь</small>
+			</header>
+			<table class="stats__items">
+				<tr>
+					<td class="stats__value">1 500<sup>*</sup></td>
+					<td class="stats__field">рублей<br>вложений</td>
+				</tr>
+				<tr>
+					<td class="stats__value">7 200<sup>*</sup></td>
+					<td class="stats__field">секунд<br>времени мастера</td>
+				</tr>
+				<tr>
+					<td class="stats__value">90 000<sup>*</sup></td>
+					<td class="stats__field">постриженных<br>волос</td>
+				</tr>
+				<tr>
+					<td class="stats__value">500 000<sup>*</sup></td>
+					<td class="stats__field">лайков и<br>комплиментов</td>
+				</tr>
+			</table>
+			<small class="stats__legend stats__legend--bottom"><sup>*</sup> — приведённые данные ложь</small>
 		</section>
-		<div class="index-content clearfix">
-			<div class="index-content-left">
-				<h2 class="index-content-title">Новости</h2>
-				<ul class="news-preview">
-					<li>
-						<p>Нам наконец завезли ягермайстер! Теперь вы можете пропустить стаканчик по время стрижки</p>
-						<time datatime="2016-09-25">25 сентября</time>
+
+		<section class="advantages">
+			<div class="advantages__wrapper slider">
+				<h2 class="advantages__title visually-hidden">Наши преимущества</h2>
+				<input class="slider__input" type="radio" name="advantages" id="advantages-input-1" checked>
+				<input class="slider__input" type="radio" name="advantages" id="advantages-input-2">
+				<input class="slider__input" type="radio" name="advantages" id="advantages-input-3">
+				<ul class="advantages__items">
+					<li class="advantages__item advantages__item--fast slider__item">
+						<h3 class="advantages__item-title">Быстро</h3>
+						<p>Мы делаем свою работу быстро! Два часа пролетят незаметно и вы — счастливый обладатель стильной стрижки-минутки.</p>
 					</li>
-					<li>
-						<p>В нашей команде пополнение, Борис «Бритва» стригунец, обладатель множества титулов и наград пополнил наши стройные ряды</p>
-						<time datatime="2016-09-19">19 сентября</time>
+					<li class="advantages__item advantages__item--cool slider__item">
+						<h3 class="advantages__item-title">Круто</h3>
+						<p>Забудьте, как вы стриглись раньше. Мы сделаем из вас звезду футбола или кино. Во всяком случае внешне.</p>
+					</li>
+					<li class="advantages__item advantages__item--expensive slider__item">
+						<h3 class="advantages__item-title">Дорого</h3>
+						<p>Наши мастера — профессионалы своего делаи не могут стоить дёшево. К тому же, разве цена не даёт определённый статус?</p>
 					</li>
 				</ul>
-				<a href="#" class="btn">Все новости</a>
-			</div>
-			<div class="index-content-right">
-				<h2 class="index-content-title">Фотогалерея</h2>
-				<div class="gallery">
-					<figure class="gallery-content">
-						<img src="img/photo-1.png" width="286" height="164" alt="">
-					</figure>
-					<button class="btn gallery-prev">Назад</button>
-					<button class="btn gallery-next">Вперед</button>
+				<div class="advantages__toggles slider__toggles">
+					<label class="slider__toggle" for="advantages-input-1">1</label>
+					<label class="slider__toggle" for="advantages-input-2">2</label>
+					<label class="slider__toggle" for="advantages-input-3">3</label>
 				</div>
 			</div>
-		</div>
-		<div class="index-content clearfix">
-			<div class="index-content-left">
-				<h2 class="index-content-title">Контактная информация</h2>
-				<p>
-					БАРБЕРШОП «БОРОДИНСКИЙ»<br>
-					АДРЕС: Г. САНКТ-ПЕТЕРБУРГ, Б. КОНЮШЕННАЯ, Д. 19/8<br>
-					ТЕЛЕФОН: +7 (495) 666-02-66
-				</p>
-				<p>
-					ВРЕМЯ РАБОТЫ:<br>
-					ПН — ПТ: С 10:00 ДО 22:00<br>
-					СБ — ВС: С 10:00 ДО 19:00
-				</p>
-				<a href="#" class="btn js-open-map">Как проехать</a>
-				<a href="#" class="btn">Обратная связь</a>
+		</section>
+
+		<section class="news">
+			<div class="news__wrapper">
+				<h2 class="news__title">Новости и акции</h2>
+				<ul class="news__items">
+					<li class="news__item">
+						<time class="news__date" datetime="2015-09-29"><b>29</b> сент</time>
+						<p>Нам наконец-то завезли Егермейстер! Теперь вы можете пропустить стаканчик во время стрижки.</p>
+					</li>
+					<li class="news__item">
+						<time class="news__date" datetime="2015-09-19"><b>19</b> сент</time>
+						<p>В нашей команде пополнение, Борис «Бритва» Стригунец, пополнил наши стройные ряды. Спешите записаться!</p>
+					</li>
+					<li class="news__item">
+						<time class="news__date" datetime="2015-09-09"><b>9</b> сент</time>
+						<p>Все дорожает, а наши стрижки нет! Как так? Приходите, постригитесь и узнаете, в чем здесь подвох!</p>
+					</li>
+				</ul>
+				<a class="news__to-all btn" href="">Показать все</a>
 			</div>
-			<div class="index-content-right">
-				<h2 class="index-content-title">Записаться</h2>
-				<p>УКАЖИТЕ ЖЕЛАЕМУЮ ДАТУ И ВРЕМЯ И МЫ СВЯЖЕМСЯ С ВАМИ ДЛЯ ПОДТВЕРЖДЕНИЯ БРОНИ</p>
-				<form action="https://echo.htmlacademy.ru" method="post" class="appointment-form">
-					<input type="text" name="date" value="" placeholder="Дата">
-					<input type="text" name="time" value="" placeholder="Время">
-					<input type="text" name="name" value="" placeholder="Ваше имя">
-					<input type="tel" name="phone" value="" placeholder="Телефон">
-					<button class="btn" type="submit">Отправить</button>
-				</form>
+		</section>
+
+		<section class="reviews">
+			<div class="reviews__wrapper slider">
+				<h2 class="reviews__title">Отзывы о нас</h2>
+				<a class="reviews__write btn" href="">Оставить свой</a>
+				<input class="slider__input" type="radio" name="reviews" id="reviews-input-1" checked>
+				<input class="slider__input" type="radio" name="reviews" id="reviews-input-2">
+				<input class="slider__input" type="radio" name="reviews" id="reviews-input-3">
+				<div class="reviews__items">
+					<blockquote class="reviews__item slider__item">
+						<div class="reviews__auhor-foto">
+							<img src="img/pic-travis.jpg" width="50" height="33" alt="Фото Трэвиса Баркера">
+						</div>
+						<cite class="reviews__auhor-name">Трэвис Баркер</cite>
+						<p>Спасибо за лысину! Был проездом в Москве, заскочил побриться, чтобы было видно новую татуировку!</p>
+					</blockquote>
+					<blockquote class="reviews__item slider__item">
+						<div class="reviews__auhor-foto">
+							<img src="img/pic-travis.jpg" width="50" height="33" alt="Фото Трэвиса Баркера">
+						</div>
+						<cite class="reviews__auhor-name">Трэвис Баркер</cite>
+						<p>Спасибо за лысину! Был проездом в Москве, заскочил побриться, чтобы было видно новую татуировку!</p>
+					</blockquote>
+					<blockquote class="reviews__item slider__item">
+						<div class="reviews__auhor-foto">
+							<img src="img/pic-travis.jpg" width="50" height="33" alt="Фото Трэвиса Баркера">
+						</div>
+						<cite class="reviews__auhor-name">Трэвис Баркер</cite>
+						<p>Спасибо за лысину! Был проездом в Москве, заскочил побриться, чтобы было видно новую татуировку!</p>
+					</blockquote>
+					<button class="reviews__prev" type="button">Предыдущий отзыв</button>
+					<button class="reviews__next" type="button">Следующий отзыв</button>
+				</div>
+				<div class="reviews__toggles slider__toggles">
+					<label class="slider__toggle" for="reviews-input-1">1</label>
+					<label class="slider__toggle" for="reviews-input-2">2</label>
+					<label class="slider__toggle" for="reviews-input-3">3</label>
+				</div>
 			</div>
-		</div>
+		</section>
 	</main>
-	<footer class="main-footer">
-		<div class="container clearfix">
-			<section class="footer-contacts">
-				БАРБЕРШОП «БОРОДИНСКИЙ»<br>
-				АДРЕС: Г. САНКТ-ПЕТЕРБУРГ, УЛ. Б. КОНЮШЕННАЯ, Д. 19/8<br>
-				<a href="#">КАК НАС НАЙТИ?</a><br>
-				ТЕЛЕФОН: +7 (495) 666-02-66
-			</section>
-			<section class="footer-social">
-				<p>Давайте дружить!</p>
-				<a href="#" class="social-btn social-btn-vk">Вконтакте</a>
-				<a href="#" class="social-btn social-btn-fb">Фейсбук</a>
-				<a href="#" class="social-btn social-btn-inst">Инстаграм</a>
-			</section>
-			<section class="footer-copyright">
-				<p>Разработано:</p>
-				<a href="https://vk.com/mr.logosh" target="_blank" class="btn">Logosh A.</a>
-			</section>
+	<footer class="page-footer">
+		<div class="page-footer__wrapper">
+			<p class="page-footer__contacts">
+				<b>Барбершоп «Бородинский»</b><br>
+				г. Санкт-Петербург, ул. Большая Конюшенная 19/8<br>
+				<a href="tel:+78125556666"><span class="page-footer__contacts-hidden">Тел.:</span> +7 (812) 555-66-66</a>
+			</p>
+			<p class="page-footer__social">
+				<span class="social-links">
+					<a class="social-link social-link--vk" href="https://vk.com/htmlacademy">Мы в Вконтакте</a>
+					<a class="social-link social-link--fb" href="https://www.facebook.com/htmlacademy">Мы в Фейсбуке</a>
+					<a class="social-link social-link--in" href="https://www.instagram.com/htmlacademy">Мы в Инстаграме</a>
+				</span>
+			</p>
+			<p class="page-footer__copyright">
+				Разработано:
+				<a class="btn page-footer__copyright-link" href="https://htmlacademy.ru/intensive/adaptive">HTML Academy</a>
+			</p>
 		</div>
 	</footer>
-	<div class="modal-content">
-		<button class="modal-content-close" type="button" title="Закрыть">Закрыть</button>
-		<h2 class="modal-content-title">Личный Кабинет</h2>
-		<p>Введите свой логин и пароль</p>
-		<form  class="login-form" action="https://echo.htmlacademy.ru" method="post">
-			<input class="icon-user" type="text" name="login" placeholder="Логин">
-			<input class="icon-password" type="password" name="password" placeholder="Пароль">
-			<label class="login-checkbox">
-				<input type="checkbox" name="remember">
-				<span class="checkbox-indicator"></span>
-				Запомните меня
-			</label>
-			<a href="#" class="restore">Я забыл пароль!</a>
-			<button class="btn" type="submit">Войти</button>
-		</form>
-	</div>
-	<div class="modal-content-map">
-		<button class="modal-content-close" type="button" title="Закрыть">Закрыть</button>
-		<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1998.5991043651616!2d30.32089461610066!3d59.938794181876204!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4696310fca5ba729%3A0xea9c53d4493c879f!2z0JHQvtC70YzRiNCw0Y8g0JrQvtC90Y7RiNC10L3QvdCw0Y8g0YPQuy4sIDE5LCDQodCw0L3QutGCLdCf0LXRgtC10YDQsdGD0YDQsywg0KDQvtGB0YHQuNGPLCAxOTExODY!5e0!3m2!1sru!2sua!4v1493473143882" width="761" height="561" frameborder="0" style="border:0" allowfullscreen></iframe>
-	</div>
-	<div class="modal-overlay"></div>
-	<script src="js/script.js"></script>
-	<script>
-		var mapOpen = document.querySelector(".js-open-map");
-		var mapPopup = document.querySelector(".modal-content-map");
-		var mapClose = mapPopup.querySelector(".modal-content-close"); 
-		
-
-		mapOpen.addEventListener("click", function(event) {
-			event.preventDefault();
-			mapPopup.classList.add("modal-content-show");
-			overlay.classList.add("modal-overlay-show");
-		});
-
-		mapClose.addEventListener("click", function(event) {
-			event.preventDefault();
-			mapPopup.classList.remove("modal-content-show");
-			overlay.classList.remove("modal-overlay-show");
-		});
-
-
-	</script>
 </body>
 </html> 
