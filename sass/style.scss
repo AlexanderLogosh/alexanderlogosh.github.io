@@ -1,5 +1,5 @@
 
-@import "normalize.scss";
+@import "global/normalize.scss";
 
 @import "variables.scss";
 @import "mixins.scss";
@@ -8,9 +8,8 @@
 
 @import "global/fonts.scss";
 
-@import "";
-@import "";
-@import "";
-@import "";
-@import "";
-@import "";
+@import "blocks/visually-hidden.scss";
+@import "blocks/page-header.scss";
+@import "blocks/main-nav.scss";
+@import "blocks/stats.scss";
+@import "blocks/advantages.scss";

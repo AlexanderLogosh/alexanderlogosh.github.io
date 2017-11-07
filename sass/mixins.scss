@@ -1,4 +1,4 @@
-.clearfix() {
+@mixin clearfix() {
 	&::after {
 		content: "";
 
@@ -7,15 +7,15 @@
 	}
 }
 
-.container() {
+@mixin container() {
 	width: 320px;
 	margin: 0 auto;
 
-	@media $tablet-widths {
+	@media ($tablet-widths) {
 		width: 640px;
 	}
 
-	@media $desktop-widths {
+	@media ($desktop-widths) {
 		width: 960px;
-	}
+	} 
 }
